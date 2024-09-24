@@ -1,0 +1,263 @@
+@import url(https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow", sans-serif;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 0 20px;
+}
+button {
+  width: 217px;
+  height: 56px;
+  border-radius: 10px;
+  background-color: #0e8784;
+  font-family: Fraunces;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 25px;
+  text-align: center;
+  color: #fefcf7;
+  border: 0;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #66d2cf;
+}
+button:disabled {
+  background-color: #e2dedb;
+}
+/* Navbar */
+.navbar {
+  z-index: 1000;
+  padding: 10px;
+  top: 0;
+  position: fixed;
+  width: 100vw;
+  height: 60px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  overflow: auto;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-items {
+  display: flex;
+}
+.nav-item {
+  margin: 0 10px;
+  display: flex;
+}
+.nav-item a:hover {
+  background-color: rgb(122, 126, 160);
+  color: white;
+}
+
+.nav-item .active {
+  background-color: rgb(129, 130, 138);
+  color: aliceblue;
+}
+.nav-item a {
+  font-family: "Barlow";
+  font-weight: 600;
+  color: #83888f;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+}
+.nav-logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+.nav-logo img {
+  width: 38px;
+}
+main-navigation {
+  display: flex;
+  align-items: center;
+}
+/* Footer */
+.footer-elements {
+  width: 70vw;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-navigation {
+  display: flex;
+  align-items: center;
+}
+.footer-items-nav,
+.footer-items-social {
+  display: flex;
+}
+.footer-item {
+  margin: 0 10px;
+  display: flex;
+}
+
+.footer-item a {
+  font-family: "Barlow";
+  font-weight: 600;
+  color: #83888f;
+  text-decoration: none;
+  font-size: 12px;
+}
+.footer-social-item {
+  margin: 0 10px;
+  display: flex;
+}
+.footer-social-item a {
+  font-family: "Barlow";
+  font-weight: 600;
+  color: #ffff;
+  text-decoration: none;
+  font-size: 24px;
+}
+.footer-logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+.footer-logo img {
+  width: 64px;
+}
+
+.main-section {
+  margin-top: 100px;
+}
+.footer {
+  padding: 10px;
+  display: flex;
+  bottom: 0;
+  background-color: #333d4b;
+}
+.togle-nav {
+  display: none;
+}
+.navbar-links {
+  display: flex;
+  list-style: none;
+}
+
+.navbar-links li {
+  margin: 0 1rem;
+}
+
+.navbar-links a {
+  font-family: Fraunces;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 32px;
+  text-align: center;
+  color: #333d4b;
+  text-decoration: none;
+}
+
+.navbar-toggle {
+  display: none;
+  background-color: inherit;
+  padding: 10px;
+  color: black;
+  font-size: 1.4rem;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+.all-main_section {
+  position: relative;
+  display: flex;
+  background-image: url("../../../public/assets/home/desktop/image-hero-coffeepress.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 600px;
+  border-radius: 10px;
+}
+@media only screen and (max-width: 1024px) {
+  .footer-elements {
+    align-items: center;
+    flex-direction: column;
+  }
+  ul {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .main-navigation {
+    display: none;
+  }
+  .navbar {
+    height: 62px;
+  }
+  .nav-logo img {
+    width: 40px;
+  }
+  .navbar-links {
+    position: fixed;
+    top: 45px;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+
+    background: linear-gradient(
+      0deg,
+      rgba(254, 252, 247, 0.504981) 0%,
+      #fefcf7 55.94%
+    );
+    flex-direction: column;
+
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .navbar-links.active1 {
+    transform: translateX(0);
+  }
+
+  .navbar-links li {
+    margin: 1.5rem 0;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+  .togle-nav {
+    display: block;
+  }
+  .footer-elements {
+    align-items: center;
+    flex-direction: column;
+  }
+  ul {
+    padding: 0;
+  }
+  .footer-items-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-item {
+    margin-bottom: 30px;
+  }
+  .footer-item a {
+    font-family: Barlow;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0.9230769276618958px;
+  }
+  .main-section {
+    margin-top: 150px;
+  }
+}
