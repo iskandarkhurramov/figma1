@@ -1,25 +1,25 @@
 import "./Home.css";
 const data = [
   {
-    url: "public/assets/home/desktop/image-gran-espresso.png",
+    url: "/assets/home/desktop/image-gran-espresso.png",
     title: "Gran Espresso",
     discription:
       "Light and flavorful blend with cocoa and black pepper for an intense experience.",
   },
   {
-    url: "public/assets/home/desktop/image-planalto.png",
+    url: "/assets/home/desktop/image-planalto.png",
     title: "Planalto",
     discription:
       "Brazilian dark roast with rich and velvety body, and hints of fruits and nuts.",
   },
   {
-    url: "public/assets/home/desktop/image-piccollo.png",
+    url: "/assets/home/desktop/image-piccollo.png",
     title: "Piccollo",
     discription:
       "Mild and smooth blend featuring notes of toasted almond and dried cherry.",
   },
   {
-    url: "public/assets/home/desktop/image-danche.png",
+    url: "/assets/home/desktop/image-danche.png",
     title: "Danche",
     discription:
       "Ethiopian hand-harvested blend densely packed with vibrant fruit notes.",
@@ -27,19 +27,19 @@ const data = [
 ];
 const data1 = [
   {
-    url: "public/assets/home/desktop/icon-coffee-bean.svg",
+    url: "/assets/home/desktop/icon-coffee-bean.svg",
     title: "Best quality",
     discription:
       "Discover an endless variety of the world’s best artisan coffee from each of our roasters.",
   },
   {
-    url: "public/assets/home/desktop/icon-gift.svg",
+    url: "/assets/home/desktop/icon-gift.svg",
     title: "Exclusive benefits",
     discription:
       "Special offers and swag when you subscribe, including 30% off your first shipment.",
   },
   {
-    url: "public/assets/home/desktop/icon-truck.svg",
+    url: "/assets/home/desktop/icon-truck.svg",
     title: "Free shipping",
     discription:
       "We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.",
