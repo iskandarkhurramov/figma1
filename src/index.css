@@ -178,25 +178,80 @@ main-navigation {
 .all-main_section {
   position: relative;
   display: flex;
-  background-image: url("../../../public/assets/home/desktop/image-hero-coffeepress.jpg");
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 600px;
+  height: 450px;
   border-radius: 10px;
 }
+.main-section-all {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 100px;
+}
+.main-section-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 445px;
+  height: 367px;
+}
+.main-section-title {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+
+  margin: 20px 0;
+  color: #fefcf7;
+}
+
+.main-section-discription p {
+  font-family: Barlow;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+  text-align: left;
+  color: white;
+  opacity: 80%;
+}
+
 @media only screen and (max-width: 1024px) {
   .footer-elements {
     align-items: center;
     flex-direction: column;
   }
+  .main-section {
+    margin-top: 100px;
+  }
   ul {
     padding: 0;
+  }
+  .main-section-title {
+    font-family: Fraunces;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 40px;
+  }
+  .main-section-discription p {
+    font-family: Barlow;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+  }
+  .all-main_section {
+    height: 400px;
   }
 }
 @media only screen and (max-width: 767px) {
   .main-navigation {
     display: none;
   }
+
   .navbar {
     height: 62px;
   }
@@ -257,7 +312,27 @@ main-navigation {
     line-height: 15px;
     letter-spacing: 0.9230769276618958px;
   }
-  .main-section {
-    margin-top: 150px;
+
+  .main-section-all {
+    padding: 20px;
+  }
+  .main-section-info {
+    align-items: center;
+    width: 300px;
+  }
+  .main-section-title {
+    font-family: Fraunces;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  .main-section-discription p {
+    font-family: Barlow;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
   }
 }
